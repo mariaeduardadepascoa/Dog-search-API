@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Busca de doguinhos</title>
+</head>
+<body>
+    <div class="title">Dog search API</div>
+    <div class="container-top">
+        <input type="search" class="search-input">
+        <button type="submit" class="button-search">Procurar</button>
+    </div>
+    <div class="container-bottom">
+        <div class="div-mostrando-cachorros">
+            <div class="botaoX">x</div>
+            <img src="" alt="" class="dog-image">
+            <div id="dog-name"></div>
+            <div id="description-dog" style="padding: 0 1.5rem 0 1.5rem;"></div>
+        </div>
+    </div>
+
+    <div id="loading" style="display: none;">
+        <img src="imagens/loading.svg" alt="">
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("imagens/pupper-dribbble.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+    text-align: center;
+}
+
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.title {
+    font-family: 'Varela Round', sans-serif;
+    color: #eaeaea;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+
+.container-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 1rem;
+}
+
+.container-bottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90vh;
+    width: 55vw;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.container-bottom.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.div-mostrando-cachorros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 1.5rem;
+    height: 100%;
+    width: 100%;
+    
+    background-color: #3D1F00;
+    border-radius: 1rem;
+
+    text-align: center;
+}
+
+.dog-image {
+    margin-top: 1rem;
+    height: 40vh;
+    max-height: 40vh;
+    width: 35vw;
+    max-width: 35vw;
+    border-radius: 0.5rem;
+}
+
+#dog-name {
+    color: #f8cc9f;
+}
+
+#description-dog {
+    color: #eaeaea;
+}
+
+/* INÍCIO DAS ESTILIZAÇÕES */
+.search-input {
+    box-shadow: 0 1px 2px rgba(26, 26, 26, .18), 0 0 8px rgba(26, 26, 26, .06) rgba(26, 26, 26, .06);
+    border: solid 1px #6c6c6c;
+    border-radius: 1rem;
+    background-color: #333333;
+
+    padding-left: 0.5rem;
+    color: #ffffff;
+    width: 15vw;
+
+}
+
+.button-search {
+    box-shadow: 0 1px 2px rgba(26, 26, 26, .18), 0 0 8px rgba(26, 26, 26, .06) rgba(26, 26, 26, .06);
+    border: solid 1px #ffffff;
+    border-radius: 1rem;
+    background-color: #333333;
+
+    color: #ffffff;
+}
+
+.search-input, .button-search {
+    height: 5vh;
+    cursor: pointer;
+}
+
+.botaoX{
+    cursor: pointer;
+    position: fixed;
+    top: 1.5%;
+    right: 2%;
+    transform: translate(-1.5%, -2%);
+    font-size: 2rem;
+    color: #f8cc9f;
+}
+
+#loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
