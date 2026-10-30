@@ -1,32 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Busca de doguinhos</title>
 </head>
+
 <body>
-    <div class="title">Dog search API</div>
-    <div class="container-top">
-        <input type="search" class="search-input">
-        <button type="submit" class="button-search">Procurar</button>
-    </div>
-    <div class="container-bottom">
-        <div class="div-mostrando-cachorros">
-            <div class="botaoX">x</div>
-            <img src="" alt="" class="dog-image">
-            <div id="dog-name"></div>
-            <div id="description-dog" style="padding: 0 1.5rem 0 1.5rem;"></div>
+    <section class="square" id="square1">
+
+        <div class="header">
+            <div class="title">DOG SEARCH API</div>
+            <div class="optionsHeader">
+                <div class="option"><a href="#square2">How It Works</a></div>
+                <div class="option"><a href="">Contact The Developer</a></div>
+            </div>
+            <button class="buttonStart">Get Start Now!</button>
         </div>
-    </div>
 
-    <div id="loading" style="display: none;">
-        <img src="imagens/loading.svg" alt="">
-    </div>
+        <div class="main-content">
+            <div class="containerLeft">
+                <div class="title">A world of paws, waiting to be discovered.</div>
+                <div class="subtitle">Find the most cute and funny dogs here (+ some info's about them)</div>
+                <button class="buttonStart">Get Start Now!</button>
+            </div>
 
+            <div class="containerRight" style="display: flex; justify-content: center; width: 100%;">
+                <img src="./imagens/d5140cadbc74a772fcfba0c19001d1df-removebg-preview.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="square" id="square2">
+        <div class="texts">
+            <div class="subtitle">How It Works</div>
+            <div class="title">A few clicks, a whole lot of paws.</div>
+            <div class="subtitle-explain">Discovering your favorite breeds is easy. Here’s how to find adorable photos and get to know the dogs behind them.</div>
+        </div>
+       
+        <div class="steps">
+            <div class="step" id="step1">
+                <div class="number-step">1</div>
+                <div class="title-step">Pick a breed</div>
+                <div class="subtitle-step">Type the name of a dog breed you’d love to know more about.</div>
+                <div class="image-step"></div>
+            </div>
+
+            <div class="step" id="step2">
+                <div class="number-step">2</div>
+                <div class="title-step">Start your search</div>
+                <div class="subtitle-step">Hit the search button and let us fetch the photos and details.</div>
+                <div class="image-step"></div>
+            </div>
+
+            <div class="step" id="step3">
+                <div class="number-step">3</div>
+                <div class="title-step">Meet the fluff</div>
+                <div class="subtitle-step">Explore adorable photos and learn what makes the breed unique.</div>
+                <div class="image-step"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="square" id="square2">
+        <div class="container-top">
+            <input type="search" class="search-input">
+            <button type="submit" class="button-search">Procurar</button>
+        </div>
+        <div class="container-bottom">
+            <div class="div-mostrando-cachorros">
+                <div class="botaoX">x</div>
+                <img src="" alt="" class="dog-image">
+                <div id="dog-name"></div>
+                <div id="description-dog" style="padding: 0 1.5rem 0 1.5rem;"></div>
+            </div>
+        </div>
+        <div id="loading" style="display: none;">
+            <img src="imagens/loading.svg" alt="">
+        </div>
+    </section>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
