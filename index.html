@@ -9,26 +9,30 @@
 </head>
 
 <body>
-    <section class="square" id="square1">
+    <section class="square" id="inicial-section">
 
         <div class="header">
-            <div class="title">DOG SEARCH API</div>
+            <div class="title"><img src="./imagens/Logo minimalista Pawberry com rosto canino.png" alt="Pawberry logo"></div>
             <div class="optionsHeader">
                 <div class="option"><a href="#square2">How It Works</a></div>
                 <div class="option"><a href="">Contact The Developer</a></div>
             </div>
-            <button class="buttonStart">Get Start Now!</button>
+            <button class="buttonStart"
+                onclick="document.getElementById('search-section').scrollIntoView({ behavior: 'smooth' })">Get Start
+                Now!</button>
         </div>
 
         <div class="main-content">
             <div class="containerLeft">
                 <div class="title">A world of paws, waiting to be discovered.</div>
                 <div class="subtitle">Find the most cute and funny dogs here (+ some info's about them)</div>
-                <button class="buttonStart">Get Start Now!</button>
+                <button class="buttonStart"
+                    onclick="document.getElementById('search-section').scrollIntoView({ behavior: 'smooth' })">Get Start
+                    Now!</button>
             </div>
 
             <div class="containerRight" style="display: flex; justify-content: center; width: 100%;">
-                <img src="./imagens/d5140cadbc74a772fcfba0c19001d1df-removebg-preview.png" alt="">
+                <img src="./imagens/Seis cães recortados em fundo transparente.png" alt="">
             </div>
         </div>
 
@@ -38,26 +42,36 @@
         <div class="texts">
             <div class="subtitle">How It Works</div>
             <div class="title">A few clicks, a whole lot of paws.</div>
-            <div class="subtitle-explain">Discovering your favorite breeds is easy. Here’s how to find adorable photos and get to know the dogs behind them.</div>
+            <div class="subtitle-explain">Discovering your favorite breeds is easy. Here’s how to find adorable photos
+                and get to know the dogs behind them.</div>
         </div>
-       
+
         <div class="steps">
             <div class="step" id="step1">
-                <div class="number-step">1</div>
+                <div class="circle-number">
+                    <div class="number-step">01</div>
+                </div>
+                <div class="circle-icon"><img src="./imagens/dog-svgrepo-com.svg" alt="Animated dog image"></div>
                 <div class="title-step">Pick a breed</div>
-                <div class="subtitle-step">Type the name of a dog breed you’d love to know more about.</div>
+                <div class="subtitle-step">Type the full name of a dog breed you’d love to know more about.</div>
                 <div class="image-step"></div>
             </div>
 
             <div class="step" id="step2">
-                <div class="number-step">2</div>
+                <div class="circle-number">
+                    <div class="number-step">02</div>
+                </div>
+                <div class="circle-icon"><img src="./imagens/love2d.svg" alt="Search icon"></div>
                 <div class="title-step">Start your search</div>
                 <div class="subtitle-step">Hit the search button and let us fetch the photos and details.</div>
                 <div class="image-step"></div>
             </div>
 
             <div class="step" id="step3">
-                <div class="number-step">3</div>
+                <div class="circle-number">
+                    <div class="number-step">03</div>
+                </div>
+                <div class="circle-icon"><img src="./imagens/person-with-dog.svg" alt=""></div>
                 <div class="title-step">Meet the fluff</div>
                 <div class="subtitle-step">Explore adorable photos and learn what makes the breed unique.</div>
                 <div class="image-step"></div>
@@ -65,25 +79,59 @@
         </div>
     </section>
 
-    <section class="square" id="square2">
+    <section class="square" id="search-section">
+        <div class="title">Which pup caught your curiosity?</div>
+        <div class="subtitle">Search for a breed to discover adorable photos, fun facts, and what makes it special.
+        </div>
+
         <div class="container-top">
             <input type="search" class="search-input">
-            <button type="submit" class="button-search">Procurar</button>
+            <button type="submit" class="button-search"><img src="./imagens/search-svgrepo.svg"
+                    alt="Search Icon">Procurar</button>
         </div>
-        <div class="container-bottom">
-            <div class="div-mostrando-cachorros">
-                <div class="botaoX">x</div>
-                <img src="" alt="" class="dog-image">
-                <div id="dog-name"></div>
-                <div id="description-dog" style="padding: 0 1.5rem 0 1.5rem;"></div>
-            </div>
+
+        <div class="div-mostrando-cachorros">
+            <img src="" alt="" class="dog-image">
+            <div id="dog-name"></div>
+            <div id="description-dog" style="padding: 0 1.5rem 0 1.5rem;"></div>
         </div>
+
         <div id="loading" style="display: none;">
-            <img src="imagens/loading.svg" alt="">
+            <img src="imagens/loading.svg" alt="Loading Icon">
         </div>
     </section>
 
 
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="./imagens/Logo Pawberry em lavanda suave.png" alt="Pawberry logo">
+                <p class="subtitle-footer">Pawberry is a cozy corner for dog lovers. Discover breeds, explore adorable photos, and get to know the little details that make every dog special.</p>
+                <p class="subtitle-footer"><b>Little paws. Big discoveries.</b></p>
+            </div>
+
+            <div class="footer-section">
+                <p>Navegação</p>
+                <ul>
+                    <li><a href="#inicial-section">Home</a></li>
+                    <li><a href="#square2">How It Works</a></li>
+                    <li><a href="#search-section">Get Started</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <p>Contato</p>
+                <address>
+                    Github: <a href="https://github.com/mariaeduardadepascoa">github/mariaeduardadepascoa</a>
+                    Email: <a href="mailto:mariapascoa356@gmail.com">mariapascoa356@gmail.com</a>
+                </address>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 dog search api. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 
