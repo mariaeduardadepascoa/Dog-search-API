@@ -1,28 +1,43 @@
-# Dog-search-API
-#### Uma aplicação desenvolvida em JavaScript, que faz uma junção da Dog API V2 para buscar e exibir informações sobre diferentes raças de cães e da Dog Ceo API para a exibir fotos aleatórias de cada cachorro. Criado como parte dos meus estudos em integração com APIs e desenvolvimento front-end.
+# Pawberry 🐾
+### Little paws. Big discoveries.
 
-## Funcionalidades
-- Busca de raças de cachorro por nome
-- Exibição de nformações resumidas sobre a raça pesquisada (características, temperamento, etc.)
-- Imagens ilustrativas das raças obtidas diretamente da Dog Ceo API
-- Interface simples e responsiva
+Pawberry is a cozy corner for dog lovers to explore different breeds, discover adorable photos, and learn what makes each dog special.
 
-## Tecnologias
-- HTML5: estrutura da aplicação
-- CSS3: estilização e organização dos elementos
-- JavaScript: lógica de busca e integração com as API's
-- Dog API V2: fornecimento dos dados sobre raças de cães
+Built with JavaScript, the application combines Dog API V2 for breed information with the Dog CEO API for random breed photos. Created as part of my studies in API integration and front-end development, Pawberry brings a warm, nostalgic touch to discovering the world of dogs.
 
-## Como Executar
+## Features
 
-1. Clone esse repositório:
-```bash
-git clone https://github.com/mariaeduardadepascoa/Dog-search-API
-```
+- Search for dog breeds by name
+- Read an overview of each breed and its characteristics
+- View random breed photos provided by the Dog CEO API
+- Explore a simple, responsive interface
 
-2. Abra o index.html no navegador.
+## Technologies
 
-## Para fazer:
-- Adicionar botão e seção de favoritos para salvar raças preferidas
-- Melhorar o tratamento de erros para buscas inválidas ou indisponibilidade da API
-- Melhorar o design geral da aplicação
+- **HTML5:** application structure and content
+- **CSS3:** styling, layout, and responsive design
+- **JavaScript:** search logic and API integration
+- **Dog API V2:** dog breed information
+- **Dog CEO API:** random dog breed photos
+
+## Getting Started
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/mariaeduardadepascoa/Dog-search-API.git
+   ```
+
+2. Open the project folder:
+
+   ```bash
+   cd Dog-search-API
+   ```
+
+3. Open `index.html` in your browser.
+
+## Planned Improvements
+
+- Add a favorites button and a dedicated section for saved breeds
+
+Pawberry is a personal learning project focused on integrating public APIs, handling asynchronous requests, and creating a welcoming user experience with HTML, CSS, and JavaScript.
