@@ -39,5 +39,3 @@ Built with JavaScript, the application combines Dog API V2 for breed information
 ## Planned Improvements
 
 - Add a favorites button and a dedicated section for saved breeds
-
-Pawberry is a personal learning project focused on integrating public APIs, handling asynchronous requests, and creating a welcoming user experience with HTML, CSS, and JavaScript.
